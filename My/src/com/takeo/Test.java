@@ -1,0 +1,40 @@
+package com.takeo;
+
+import java.util.Scanner;
+
+public class Test {
+	public static void main(String... args) {
+		Scanner scanner = new Scanner(System.in);
+		while (true) {
+			System.out.println("===Start====");
+			System.out.print("Please enter a positive integer : ");
+			int a = scanner.nextInt();
+			String tr = a+" is a prime number";
+			String fl = a+" is not a prime number";
+			if (a == 1 || a == 2 || a == 3) {
+				System.out.println(tr);
+			}
+			else if(a==4){
+				System.out.println(fl);
+			}
+			else if(a>4){
+				boolean flag=true;
+				for (int i = 2; i<= a/2; i++) {
+					if(a%i==0) {
+						System.out.println(fl);
+						flag=false;
+						break;
+					}
+				}
+				if(flag) {
+					System.out.println(tr);
+				}
+			}
+			
+			
+			System.out.println("===End=====\n");
+			
+		}
+		
+	}
+}
