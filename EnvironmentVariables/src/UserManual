@@ -1,0 +1,5 @@
+Before running the Main class, please, set the following Environment Variables, in your System:
+1.)MySql User name as "sqlUsername".
+2.)MySql Password as "sqlPassword".
+3.)MySql Driver class as "sqlDriverclass".
+4.)MySql Database name as "sqlDatabase".
