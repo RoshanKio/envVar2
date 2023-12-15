@@ -28,7 +28,7 @@ public class EnvironmentVariableTest {
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/" + System.getenv("sqlDatabase"),
 					System.getenv("sqlUsername"), System.getenv("sqlPassword"));
 			statement = connection.createStatement();
-			resultSet = statement.executeQuery("select * from " + System.getenv("tableName"));
+			resultSet = statement.executeQuery("select * from " + System.getenv("sqlTableName"));
 			resultSetMetaData = resultSet.getMetaData();
 			int numberOfColumn = resultSetMetaData.getColumnCount();
 
